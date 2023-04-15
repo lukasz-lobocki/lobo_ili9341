@@ -15,7 +15,6 @@
 
 import time
 import ustruct
-import micropython_ili9341.glcdfont as glcdfont
 import framebuf
 from micropython import const
 
@@ -52,9 +51,9 @@ _CHUNK = const(1024) #maximum number of pixels per spi write
 def color565(r, g, b):
     return (r & 0xf8) << 8 | (g & 0xfc) << 3 | b >> 3
 
-class ILI9341:
+class ILI9341():
 
-    def __init__(self, spi, cs, dc, rst, w, h, r):
+    def __init__(self, spi, cs, dc, rst, w, h, r, font):
         self.spi = spi
         self.cs = cs
         self.dc = dc
@@ -74,7 +73,7 @@ class ILI9341:
         self._colormap = bytearray(b'\x00\x00\xFF\xFF') #default white foregraound, black background
         self._x = 0
         self._y = 0
-        self._font = glcdfont
+        self._font = font
         self.scrolling = False
 
     def set_color(self,fg,bg):
@@ -154,6 +153,7 @@ class ILI9341:
             (_PGAMCTRL, b"\x0f\x31\x2b\x0c\x0e\x08\x4e\xf1\x37\x07\x10\x03\x0e\x09\x00"),
             (_NGAMCTRL, b"\x00\x0e\x14\x03\x11\x07\x31\xc1\x48\x08\x0f\x0c\x31\x36\x0f")):
             self._write(command, data)
+        
         self._write(_SLPOUT)
         time.sleep_ms(120)
         self._write(_DISPON)
@@ -274,6 +274,7 @@ class ILI9341:
 
     def next_line(self, cury, char_h):
         global scrolling
+        
         if not self.scrolling:
             res = cury + char_h
             self.scrolling = (res >= self.height)
