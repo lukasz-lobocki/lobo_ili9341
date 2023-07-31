@@ -20,7 +20,6 @@ python = "^3.10"
 name = "PyPI"
 priority = "primary"
 
-
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = "^8.0.4"
 twine = "^4.0.2"
@@ -29,7 +28,7 @@ adafruit-ampy = "^1.1.0"
 [tool.semantic_release]
 version_toml = ["pyproject.toml:tool.poetry.version"]
 commit_author = "lukasz-lobocki <lukasz.lobocki@googlemail.com>"
-build_command = "poetry build"
+#build_command = "poetry build"
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
