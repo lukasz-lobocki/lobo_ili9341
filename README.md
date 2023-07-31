@@ -13,6 +13,8 @@ poetry add --editable \
 
 `lobo_ili9341` was created by Lukasz Lobocki. It is licensed under the terms of the CC0 v1.0 Universal license.
 
+`lobo_ili9341` was based on `https://github.com/jeffmer/micropython-ili9341.git`
+
 All components used retain their original licenses.
 
 ## Credits
