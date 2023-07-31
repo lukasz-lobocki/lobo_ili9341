@@ -2,6 +2,13 @@
 
 
 
+## v0.3.8 (2023-07-31)
+
+### Fix
+
+* fix: Amend. ([`f716ca8`](https://github.com/lukasz-lobocki/lobo_ili9341/commit/f716ca884c67ab021851125eb81d72f31e5dce3d))
+
+
 ## v0.3.7 (2023-07-31)
 
 ### Fix
