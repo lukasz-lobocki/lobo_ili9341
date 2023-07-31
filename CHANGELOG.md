@@ -2,6 +2,13 @@
 
 
 
+## v0.3.10 (2023-07-31)
+
+### Fix
+
+* fix: Amend. ([`9f198fe`](https://github.com/lukasz-lobocki/lobo_ili9341/commit/9f198fe3d9177bcee1f996900942a9666de38c0f))
+
+
 ## v0.3.9 (2023-07-31)
 
 ### Fix
