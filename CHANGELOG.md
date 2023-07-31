@@ -2,6 +2,17 @@
 
 
 
+## v0.3.5 (2023-07-31)
+
+### Chore
+
+* chore: Amend. ([`4c87322`](https://github.com/lukasz-lobocki/lobo_ili9341/commit/4c873226f06dfdee9f2d2b8b8397f9a241913bc8))
+
+### Fix
+
+* fix: Amend. ([`1ffe0b1`](https://github.com/lukasz-lobocki/lobo_ili9341/commit/1ffe0b124fe068d257e252b04876fcbf3a838564))
+
+
 ## v0.3.4 (2023-07-31)
 
 ### Fix
