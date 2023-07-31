@@ -2,6 +2,13 @@
 
 
 
+## v0.3.4 (2023-07-31)
+
+### Fix
+
+* fix: Adding font_to_py ([`0e58d56`](https://github.com/lukasz-lobocki/lobo_ili9341/commit/0e58d5608d70fb2932da647e7d613d6e205e68d6))
+
+
 ## v0.3.3 (2023-07-31)
 
 ### Fix
