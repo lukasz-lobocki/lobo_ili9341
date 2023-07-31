@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "lobo_ili9341"
-version = "0.3.8"
+version = "0.3.9"
 description = "ILI934x display driver."
 authors = ["Lukasz Lobocki"]
 license = "CC0 v1.0 Universal"
