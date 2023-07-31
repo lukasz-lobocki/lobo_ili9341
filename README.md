@@ -1,4 +1,4 @@
-dupa# lobo_ili9341 ![Static](https://img.shields.io/badge/wieprz-nerw-pink?style=for-the-badge&labelColor=midnightblue)
+# lobo_ili9341 ![Static](https://img.shields.io/badge/wieprz-nerw-pink?style=for-the-badge&labelColor=midnightblue)
 
 ILI934x display driver.
 
